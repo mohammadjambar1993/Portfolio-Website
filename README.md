@@ -1,8 +1,8 @@
 # Erik Cupsa's Coding Portfolio
 
-Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://erikc-portfolio.vercel.app/)
+Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://mohamamdjambar1993.vercel.app/)
 
-<img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/Erik-Cupsa/PortfolioWebsite/assets/86483911/3158d670-8cea-428a-8308-32c6b50f4de0">
+<img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/mohammadjambar1993/Portfolio-Website/3158d670-8cea-428a-8308-32c6b50f4de0">
 
 
 
@@ -35,7 +35,7 @@ This portfolio is a personalized space for me to highlight my expertise, share m
 
 To run this portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git](https://github.com/Erik-Cupsa/PortfolioWebsite.git`
+1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git](https://github.com/mohamamdjambar1993/Portfolio-Website.git`
 
 2. Navigate to the project directory: `cd PortfolioWebsite`
 
