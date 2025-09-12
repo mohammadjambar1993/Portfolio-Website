@@ -1,10 +1,14 @@
 # Mohamamd Jambar's Coding Portfolio
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://mohamamdjambar1993.vercel.app/)
 =======
 Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://mohamamdjambar1993.vercel.app/)
 >>>>>>> 79a9dd9a0586ef17db082710be8f0b41ce2a689a
+=======
+Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://mohamamdjambar1993.vercel.app/)
+>>>>>>> e8a0e7839b5085ff653098d1a2e09f2dd003ecc8
 
 <img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/mohammadjambar1993/Portfolio-Website/3158d670-8cea-428a-8308-32c6b50f4de0">
 
