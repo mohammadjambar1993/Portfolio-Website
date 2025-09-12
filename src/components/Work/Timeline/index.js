@@ -4,46 +4,63 @@ import './index.scss';
 const Timeline = () => {
   const [events, setEvents] = useState([
     {
-      date: 'May-September 2024',
-      title: 'TRC Consutling, Inc.',
+      date: '2021 - Present',
+      title: 'R&D Software Developer 1',
+      company: 'Myant Inc. Toronto, Canada',
       description: [
-        'Engineered Large Language Models (LLMs), including <b>BERT</b> and <b>Attention Models</b>, to analyze <b>software engineering requirements</b> and generate accurate dependency lists, improving project planning efficiency by <b>37%</b>',
-        'Analyzed 1200+ <b>software requirements</b> monthly using <b>scikit-learn</b> (classification models), <b>spaCy</b>, and <b>NLTK</b> in <b>Python</b>, saving the company $20,000 annually by decreasing project lead times',
-        'Integrated <b>TF-IDF</b> vectorization to detect similarities in <b>software requirements</b>, focusing on preprocessing, model training, hyperparameter tuning and clustering to optimize <b>NLP</b> analysis processes',
+        'Developing Python-based gateway systems for real-time acquisition, processing, and transmission of ECG and IMU signals, ensuring low-latency, reliable data flow for wearable medical devices.',
+        'Designing modular signal-processing pipelines with optimized algorithms and data structures, improving streaming performance and reducing memory usage by 30%.',
+        'Containerizing and deploying systems with Docker on Raspberry Pi, enabling fault-tolerant, portable, and scalable execution in distributed environments.',
+        'Building monitoring and logging frameworks to detect anomalies, track system health, and maintain continuous uptime.',
+        'Creating real-time dashboards for visualizing fatigue metrics and multi-sensor physiological data, improving insight accessibility for researchers.',
+        'Developing Python modules for processing and analyzing neurostimulation data from industry-scalable textile electrodes, contributing to a publication in Wiley Advanced.',
+        'Developing and deploying a fatigue detection algorithm using IMU data, implemented on Raspberry Pi with a real-time dashboard, generating $500,000 in project funding from the Canadian Space Agency',
       ],
       expanded: false,
     },
     {
-      date: 'May-September 2023',
-      title: 'TRC Consulting, Inc.',
+      date: '2019 - 2020',
+      title: 'Software Developer',
+      company: 'Nobaf Persian Tehran, Iran',
       description: [
-        'Designed <b>30+ AWS Lambda Functions in AWS</b>, strategically leveraging <b>Lambda layers</b> to increase processing speed by <b>35% </b>and re-usability by <b>52%</b>, resulting in cost savings of <b>$1,000</b> per large scale deployment',
-        'Implemented <b>15+</b> serverless workflows using <b>AWS Step Functions</b>, seamlessly integrating <b>REST APIs </b>and rigorously tested with <b>Postman</b>, resulting in a <b>65%</b> reduction in execution time and enhanced operational efficiency',
-        'Crafted a <b>Spring Boot</b> application with a <b>Drools</b> logic engine, containerized it using <b>Docker</b>, and seamlessly deployed it on <b>AWS</b> using <b>EC2</b>, strategically allocating cloud resources to ensure enhanced scalability and reliability',
+        'Built and maintained <b>backend services</b> and <b>REST APIs</b> using <b>Python</b> and <b>Django</b> to support application features and workflows.',
+        'Participated in <b>architecture and design discussions</b>, selecting technologies for scalable and maintainable systems.',
+        'Wrote <b>unit and integration tests</b> to ensure code reliability and maintainability.',
+        'Troubleshot and resolved system issues, analyzing impacts on <b>databases (PostgreSQL/MySQL), servers, and network operations</b>.',
+        'Optimized backend performance and implemented best practices for <b>API design, authentication, and data handling</b>.',
       ],
       expanded: false,
     },
     {
-      date: 'May-September 2022',
-      title: 'Government Of Canada',
+      date: '2017 - 2019',
+      title: 'ATM System Software Development & Intern',
+      company: 'Adonis Company - Tehran, Iran',
       description: [
-        'Programmed and deployed a <b>Python-based data migration pipeline</b> on <b>Azure</b>, achieving a <b>50%</b> reduction in transfer time for <b>100+ terabytes</b> of critical business data',
-        'Centralized a <b>SQL database infrastructure</b> on <b>Azure</b>, enhancing data accessibility and security for <b>50+</b> stakeholders, resulting in a <b>30%</b> improvement in query performance across the organization',
+        'Assisted in developing backend data pipelines for ATM transactions, supporting logging, storage, and retrieval of financial and operational data using <b>MySQL</b>, <b>PostgreSQL</b>, and AWS <b>RDS</b>.',
+        'Helping design and optimize algorithms and data structures for transaction handling, error detection, and recovery.',
+        'Supporting the creation of <b>data aggregation and monitoring services</b> using <b>AWS S3</b>, <b>Redshift</b>, and <b>ETL tools</b> to assist reporting and analytics.',
+        'Participating in testing, debugging, and optimization of data workflows to maintain <b>system performance and data integrity</b>.',
+      ],
+      expanded: false,
+    },
+      {
+      title: 'ACTIVITIES & RECOGNITION',
+      description: [
+        'Industry-Scalable Reusable Textile Electrodes for Neurostimulation Applications <b>(Wiley Advanced)</b>.',
+        'Developed a fingerprint-based electric lock system for University Competition.'
       ],
       expanded: false,
     },
   ]);
+  
+
 
   const handleItemClick = (index) => {
-    setEvents((prevEvents) => {
-      const updatedEvents = prevEvents.map((event, idx) => {
-        if (idx === index) {
-          return { ...event, expanded: !event.expanded };
-        }
-        return event;
-      });
-      return updatedEvents;
-    });
+    setEvents((prevEvents) =>
+      prevEvents.map((event, idx) =>
+        idx === index ? { ...event, expanded: !event.expanded } : event
+      )
+    );
   };
 
   return (
@@ -57,19 +74,19 @@ const Timeline = () => {
           <div className="timeline-marker"></div>
           <div className="timeline-content">
             <h2>{event.title}</h2>
-            {event.expanded ? (
-              <div>
+            {event.company && <h4 className="company">{event.company}</h4>}
+            <div className="date">{event.date}</div>
+            {event.expanded && (
+              <div className="description">
                 {event.description.map((desc, descIndex) => (
                   <p key={descIndex} dangerouslySetInnerHTML={{ __html: desc }} />
                 ))}
               </div>
-            ) : (
-              <>
-                <div className="more">
-                  <p>Click for more</p>
-                </div>
-                <div className="date">{event.date}</div>
-              </>
+            )}
+            {!event.expanded && (
+              <div className="more">
+                <p>Click for more</p>
+              </div>
             )}
           </div>
         </div>
