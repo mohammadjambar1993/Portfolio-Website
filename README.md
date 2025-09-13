@@ -37,7 +37,7 @@ To run this portfolio locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git](https://github.com/mohammadjambar1993/Portfolio-Website.git`
 
-2. Navigate to the project directory: `cd Portfolio Website`
+2. Navigate to the project directory: `cd Portfolio-Website`
 
 3. Install dependencies: `npm install`
 
