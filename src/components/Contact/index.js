@@ -22,25 +22,27 @@ const Contact = () => {
       }, []);
 
       const sendEmail = (e) => {
-        e.preventDefault() 
+  e.preventDefault();
 
-        emailjs
-            .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                refForm.current,
-                process.env.REACT_APP_EMAILJS_USER_ID
-            )
-            .then(
-                () => {
-                    alert("Message successfully sent! I will get back to you within 1 to 2 business days.")
-                    window.location.reload(false)
-                }, 
-                () => { 
-                    alert("Failed to send the message, please try again")
-                }
-            )
+  emailjs
+    .sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      refForm.current,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        alert(
+          "Message successfully sent! I will get back to you within 1 to 2 business days."
+        );
+        window.location.reload(false);
+      },
+      () => {
+        alert("Failed to send the message, please try again");
       }
+    );
+};
 
     return(
         <>
@@ -62,7 +64,7 @@ const Contact = () => {
                                     <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/mohammadjambar/">
                                         <FontAwesomeIcon icon={faLinkedin}  class = "icon" color = "#4d4d4e" />
                                     </a>
-                                    <a target = "_blank" rel = "noreferrer" href = "mailto:mohammadjambar@gmail.com">
+                                    <a target = "_blank" rel = "noreferrer" href = "https://mail.google.com/mail/?view=cm&to=mohammadjambar@gmail.com">
                                         <FontAwesomeIcon icon={faEnvelope} class = "icon" color = "#4d4d4e" />
                                     </a>
                                 </p>
