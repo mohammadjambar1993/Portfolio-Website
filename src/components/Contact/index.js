@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faPhone } from "@fortawesome/free-solid-svg-icons"
+
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -62,8 +63,8 @@ const Contact = () => {
                                     <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/mohammadjambar/">
                                         <FontAwesomeIcon icon={faLinkedin}  class = "icon" color = "#4d4d4e" />
                                     </a>
-                                    <a target = "_blank" rel = "noreferrer" href = "mailto:mohammadjambar@gmail.com">
-                                        <FontAwesomeIcon icon={faEnvelope} class = "icon" color = "#4d4d4e" />
+                                    <a target="_blank" rel="noreferrer" href="tel:+14168576194">
+                                        <FontAwesomeIcon icon={faPhone} className="icon" color="#4d4d4e" size="9x"/>
                                     </a>
                                 </p>
                             </td>
