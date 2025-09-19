@@ -49,6 +49,7 @@ const Portfolio = () => {
             <Loader type="pacman"/>
         </>
     );
+    
 }
 
 export default Portfolio
