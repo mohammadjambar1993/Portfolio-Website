@@ -3,7 +3,7 @@
        
         {
             "cover": "/portfolio/CSA.png", 
-            "title": "canadian Space Agency Project", 
+            "title": "Canadian Space Agency Project", 
             "description": "Python, Postgres, Docker, Redis, Debeaver", 
             "url": "https://github.com/mohammadjambar1993/CSA/"
         },
