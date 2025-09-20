@@ -8,6 +8,12 @@
             "url": "https://github.com/mohammadjambar1993/CSA/"
         },
         {
+            "cover": "/portfolio/Interface.JPG", 
+            "title": "Security Interface Detection", 
+            "description": "Python", 
+            "url": "https://github.com/mohammadjambar1993/Security-Interface-Detection"
+        },
+        {
             "cover": "/portfolio/PLPredictor.png", 
             "title": "PL Match Predictor", 
             "description": "Python, Sci-kit Learn, Pandas", 
