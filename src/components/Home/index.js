@@ -9,7 +9,7 @@ import Logo from './Logo';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = "ohammad, ".split("");
-    const jobArray = "software engineer.".split("");
+    const jobArray = "Software Engineer – Biomedical Product Innovation".split("");
 
     useEffect(() => {
         const timerId = setTimeout(() => {
