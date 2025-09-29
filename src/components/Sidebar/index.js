@@ -1,7 +1,7 @@
 import './index.scss'
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase, faFolderOpen, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faFolderOpen, faBars, faClose, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import LogoE from '../../assets/images/E.png'
 import LogoSubtitle from '../../assets/images/logo-sub.png'
 import { faGithub, faLinkedin, faInstagram} from '@fortawesome/free-brands-svg-icons'
@@ -28,6 +28,9 @@ const Sidebar = () => {
                 </NavLink>
                 <NavLink exact="true" activeclassname = "active" className = "portfolio-link" to="/portfolio">
                     <FontAwesomeIcon icon = {faFolderOpen} color = "#4d4d4e" onClick={() => setShowNav(false)} />
+                </NavLink>
+                <NavLink exact="true" activeclassname = "active" className = "resume-link" to="/resume">
+                    <FontAwesomeIcon icon = {faFilePdf} color = "#4d4d4e" onClick={() => setShowNav(false)} />
                 </NavLink>
                 <NavLink exact="true" activeclassname = "active" className = "contact-link" to="/contact">
                     <FontAwesomeIcon icon = {faEnvelope} color = "#4d4d4e" onClick={() => setShowNav(false)}/>

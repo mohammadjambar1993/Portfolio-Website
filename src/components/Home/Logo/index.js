@@ -1,4 +1,4 @@
-import LogoE from '../../../assets/images/E.png';
+import LogoE from '../../../assets/images/MJ.jpg';
 import './index.scss';
 
 const Logo = () => {

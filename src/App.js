@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 import Work from './components/Work';
 import Tech from './components/About/Tech';
 import Dev from './components/About/Dev';
@@ -26,6 +27,7 @@ function App() {
           <Route path="about/dev" element={<Dev />} />
           <Route path="contact" element={<Contact />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="work" element={<Work />} />
         </Route>
       </Routes>

@@ -122,7 +122,12 @@
                 font-size: 6px; 
             }
         }
-
+        a.resume-link { 
+            &:after { 
+                content: "RESUME"; 
+                font-size: 8px; 
+            }
+        }
         a.active{
             svg{
                 color: #ffd700; 
