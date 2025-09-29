@@ -28,7 +28,7 @@ const Resume = () => {
         <div className="resume-container">
           {/* JPG Full-width */}
           <div className="resume-card">
-            <img src="/Resume.JPG" alt="Resume Preview" className="resume-image" />
+            <img src="/Resume.jpg" alt="Resume Preview" className="resume-image" />
           </div>
 
           {/* Download Button */}
