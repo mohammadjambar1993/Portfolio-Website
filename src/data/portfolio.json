@@ -16,7 +16,7 @@
         {
             "cover": "/portfolio/Sleepy-Eyes-Detector.jpg", 
             "title": " Sleepy Eye Detector", 
-            "description": "JavaScript", 
+            "description": "Python, MediaPipe FaceMesh, OpenCV", 
             "url": "https://github.com/mohammadjambar1993/Sleepy-Eye-Detector"
         },
         {
