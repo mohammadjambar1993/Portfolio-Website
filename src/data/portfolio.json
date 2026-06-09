@@ -1,6 +1,24 @@
 {
     "portfolio": [
+        {
+            "cover": "/portfolio/POD.png", 
+            "title": "Algorithm", 
+            "description": "Python, Deep Learning, Machine Learning, Sci-kit Learn, Pandas", 
+            "url":""
+        },
 
+        {
+            "cover": "/portfolio/POD.png", 
+            "title": "BACKEND", 
+            "description": "node.js, Express.js, Javascript", 
+            "url":""
+        },
+        {
+            "cover": "", 
+            "title": "Frontend", 
+            "description": "ReactJS, HTML, CSS, JavaScript", 
+            "url":""
+        },
         {
             "cover": "/portfolio/POD.png", 
             "title": "Neurostimulation Pod Pcb Design", 
@@ -13,9 +31,9 @@
             "title": "Neurostimulation Fw", 
             "description": "C/C++, Zephyr RTOS, Nordic SDK", 
             "url":"https://github.com/mohammadjambar1993/FW-stimulator-nrf5340-dev-stimulator-fw"
-        },
+        },                                                                  
         {
-            "cover": "/portfolio/Heat.jpg", 
+            "cover": "/portfolio/Heat.png", 
             "title": "Menstrual Band, Canada Goose, Google", 
             "description": "C, Python, Arduino", 
             "url": "https://github.com/mohammadjambar1993/fw_skiin_baselayer-Canada-Goose"
