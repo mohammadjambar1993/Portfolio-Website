@@ -27,7 +27,7 @@
         },
 
         {
-            "cover": "/portfolio/.png", 
+            "cover": "/portfolio/POD.png", 
             "title": "Neurostimulation Pod Pcb Design", 
             "description": "Altium Designer, PCB Design, Schematic Capture", 
             "url":"https://github.com/mohammadjambar1993/Altium-Designer_PCB_Altium"
