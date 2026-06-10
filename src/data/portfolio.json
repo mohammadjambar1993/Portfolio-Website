@@ -33,7 +33,7 @@
             "url":"https://github.com/mohammadjambar1993/Altium-Designer_PCB_Altium"
         },     
         {
-            "cover": "/portfolio/N.png", 
+            "cover": "/portfolio/", 
             "title": "Neurostimulation Fw", 
             "description": "C/C++, Zephyr RTOS, Nordic SDK", 
             "url":"https://github.com/mohammadjambar1993/FW-stimulator-nrf5340-dev-stimulator-fw"
